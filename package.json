@@ -1,0 +1,35 @@
+{
+  "name": "query-starnames",
+  "version": "1.0.0",
+  "description": "Client package to query starnames",
+  "author": {
+    "email": "jatin@iov.one",
+    "name": "Jatin Sarda",
+    "url": "https://github.com/xpt1x"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "*.md"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iov-one/query-starnames"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "typescript": "^4.9.3"
+  }
+}

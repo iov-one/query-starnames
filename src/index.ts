@@ -1,0 +1,1 @@
+export { StarnameQueryClient } from "./queryClient";
