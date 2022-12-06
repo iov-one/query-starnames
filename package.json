@@ -1,6 +1,6 @@
 {
   "name": "query-starnames",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "Client package to query starnames",
   "author": {
     "email": "jatin@iov.one",
@@ -23,10 +23,11 @@
   },
   "scripts": {
     "build": "rm -rf ./dist && tsc",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "yarn build && yarn publish"
   },
   "dependencies": {
-    "axios": "^1.2.0"
+    "axios": "0.27.2"
   },
   "devDependencies": {
     "@types/node": "^18.11.10",
