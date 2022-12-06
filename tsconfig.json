@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
+    "module": "CommonJS",
     "strict": true,
     "target": "ES2017",
     "declaration": true,
-    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "outDir": "dist",
+    "outDir": "dist"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

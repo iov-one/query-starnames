@@ -1,5 +1,5 @@
 {
-  "name": "query-starnames",
+  "name": "@iov/query-starnames",
   "version": "1.0.5",
   "description": "Client package to query starnames",
   "author": {

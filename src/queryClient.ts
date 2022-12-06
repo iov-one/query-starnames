@@ -46,7 +46,7 @@ export class StarnameQueryClient {
     return response.data.domains;
   }
 
-  async resourceAccounts(
+  async getResourceAccounts(
     uri: string,
     resource: string
   ): Promise<ReadonlyArray<Account>> {
