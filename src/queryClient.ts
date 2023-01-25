@@ -10,6 +10,7 @@ import { Domain } from "./types/domain";
 import { Account } from "./types/account";
 import { ApiEscrow, Escrow, toCommonEscrowState } from "./types/escrow";
 import { GenericApiResponse } from "./types/genericApiResponse";
+import { Buffer } from "buffer/";
 
 const STARNAME_CONTEXT = "/starname/v1beta1";
 const ESCROW_CONTEXT = "/escrow";
@@ -63,7 +64,9 @@ export class StarnameQueryClient {
     uri: string,
     resource: string
   ): Promise<ReadonlyArray<Account>> {
-    const {data: {accounts}} = await axios.get<ResourceAccountsResolveResponse>(
+    const {
+      data: { accounts },
+    } = await axios.get<ResourceAccountsResolveResponse>(
       `${this.starnameApiUrl}/accounts/resource/${uri}/${resource}`
     );
     return accounts;
